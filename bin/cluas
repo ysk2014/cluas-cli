@@ -1,28 +1,6 @@
 #!/usr/bin/env node
 
 const chalk = require("chalk");
-const semver = require("semver");
-const requiredVersion = require("../package.json").engines.node;
-
-function checkNodeVersion(wanted, id) {
-    if (!semver.satisfies(process.version, wanted)) {
-        console.log(
-            chalk.red(
-                "You are using Node " +
-                    process.version +
-                    ", but this version of " +
-                    id +
-                    "requires Node " +
-                    wanted +
-                    ".\nPlease upgrade your Node version."
-            )
-        );
-        process.exit(1);
-    }
-}
-
-checkNodeVersion(requiredVersion, "cluas-cli");
-
 const program = require("commander");
 
 program.version(require("../package").version).usage("<command> [options]");
@@ -58,6 +36,7 @@ program.parse(process.argv);
 
 if (!process.argv.slice(2).length) {
     program.outputHelp();
+    process.emit(1);
 }
 
 // commander passes the Command object itself as options,
