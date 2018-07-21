@@ -1,0 +1,37 @@
+{
+  "name": "@cluas/cli",
+  "version": "0.0.1",
+  "description": "常用的cli工具",
+  "main": "index.js",
+  "bin": {
+    "cli": "cluas.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysk2014/cluas-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ysk2014/cluas-cli/issues"
+  },
+  "homepage": "https://github.com/ysk2014/cluas-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "ejs": "^2.6.1",
+    "fs-extra": "^6.0.1",
+    "globby": "^8.0.1",
+    "inquirer": "^6.0.0",
+    "isbinaryfile": "^3.0.2",
+    "recast": "^0.15.0",
+    "semver": "^5.5.0",
+    "slash": "^2.0.0"
+  }
+}
