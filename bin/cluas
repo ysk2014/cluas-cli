@@ -9,6 +9,7 @@ program
     .command("add <tpl-name>")
     .description("添加模板")
     .option("-d, --debug", "debug模式下运行")
+    .option("-c, --clear", "清除所有缓存")
     .action((name, cmd) => {
         require("../lib/add/index")(name, cleanArgs(cmd));
     });

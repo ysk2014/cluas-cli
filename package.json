@@ -1,6 +1,6 @@
 {
   "name": "cluas-cli",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "常用的cli工具",
   "main": "index.js",
   "bin": {
@@ -33,6 +33,7 @@
     "globby": "^8.0.1",
     "inquirer": "^6.0.0",
     "isbinaryfile": "^3.0.2",
+    "lowdb": "^1.0.0",
     "ora": "^3.0.0",
     "parse5": "^5.0.0",
     "read-pkg": "^4.0.1",
