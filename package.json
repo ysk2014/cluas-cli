@@ -1,6 +1,6 @@
 {
   "name": "cluas-cli",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "常用的cli工具",
   "main": "index.js",
   "bin": {
