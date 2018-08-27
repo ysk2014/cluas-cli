@@ -6,6 +6,14 @@ const program = require("commander");
 program.version(require("../package").version).usage("<command> [options]");
 
 program
+    .command("create <tpl-name> <app-name>")
+    .description("创建工程")
+    .option("-c, --clear", "清除所有缓存")
+    .action((tpl, app, cmd) => {
+        require("../lib/create/index")(tpl, app, cleanArgs(cmd));
+    });
+
+program
     .command("add <tpl-name>")
     .description("添加模板")
     .option("-d, --debug", "debug模式下运行")
